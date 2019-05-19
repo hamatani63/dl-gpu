@@ -24,10 +24,6 @@ RUN pip install keras
 RUN pip install PySide2 opencv-python
 RUN pip install 'ideep4py<2.1'
 
-# jupyter issue #401
-RUN pip uninstall -y tornado
-RUN pip install tornado==5.1.1
-
 # Jupyter
 USER root
 EXPOSE 8888
